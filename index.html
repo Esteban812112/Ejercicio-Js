@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootswatch Vapor Theme -->
+  <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+
+  <title>Gaming Hub - Crea tu contenido</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="mt-4 p-5 bg-primary text-white rounded text-center">
+      <h1>Gaming Hub: Crea tu página de contenido</h1>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Título</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="nuevoParrafo()">Agregar Párrafo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="document.getElementById('imagen').click()">Agregar Imagen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="nuevoEnlace()">Agregar Enlace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="imprimir()">Imprimir</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-9">
+        <div class="form-group">
+          <label for="texto">Escribe tu contenido:</label>
+          <textarea class="form-control" id="texto" rows="5" placeholder="Escribe algo sobre tu videojuego favorito..."></textarea>
+        </div>
+        <div class="form-group mt-3">
+          <label for="imagen">Sube una imagen:</label>
+          <input type="file" class="form-control d-none" id="imagen">
+        </div>
+        <div class="card mt-4 p-3" id="contenido">
+          <h4>Contenido generado:</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/contenido.js"></script>
+</body>
+
+</html>
